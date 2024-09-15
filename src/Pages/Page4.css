@@ -1,0 +1,170 @@
+/* src/pages/Page4.css */
+
+.page {
+    max-width: 1200px; /* Increased width */
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Toggle Buttons */
+.toggles {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.toggle-btn {
+    flex: 1;
+    margin: 0 10px;
+    padding: 12px;
+    background-color: #ddd;
+    color: #333;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.toggle-btn.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.toggle-btn:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+/* Item List */
+#item-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between items */
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    transition: box-shadow 0.3s, background-color 0.3s;
+    cursor: pointer;
+}
+
+.item.selected {
+    background-color: #d4edda; /* Green background for selected */
+    border: 1px solid #28a745; /* Green border */
+}
+
+.item.unselected {
+    background-color: #f8d7da; /* Red background for unselected */
+    border: 1px solid #dc3545; /* Red border */
+}
+
+.item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.item-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-details {
+    flex: 1; /* Make sure this element takes up the available space */
+    margin-right: 10px; /* Space between details and checkbox */
+}
+
+.item-details p {
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+/* Standardized Image */
+.standardized-image {
+    width: 150px; /* Set desired width */
+    height: 150px; /* Set desired height */
+    object-fit: cover; /* Maintain aspect ratio, cover entire area */
+    border-radius: 8px; /* Optional: round the corners */
+    display: block; /* Ensures image is treated as a block-level element */
+    margin-top: 10px; /* Add some space above the image */
+}
+
+/* Buttons */
+.cart-btn, .like-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #007bff;
+    margin-left: 5px;
+    transition: color 0.3s;
+}
+
+.cart-btn:hover {
+    color: #0056b3;
+}
+
+.like-btn {
+    color: #ff4081;
+}
+
+.like-btn:hover {
+    color: #e91e63;
+}
+
+/* Dark Mode Styles */
+body.dark-mode .toggle-btn {
+    background-color: #555;
+    color: #f4f4f9;
+    border-color: #666;
+}
+
+body.dark-mode .toggle-btn.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+body.dark-mode .item.selected {
+    background-color: #2d3e2c; /* Darker green for selected in dark mode */
+    border-color: #28a745;
+}
+
+body.dark-mode .item.unselected {
+    background-color: #4a2a2a; /* Darker red for unselected in dark mode */
+    border-color: #dc3545;
+}
+
+body.dark-mode .item-details p {
+    color: #ccc;
+}
+
+body.dark-mode .cart-btn:hover,
+body.dark-mode .like-btn:hover {
+    color: #fff;
+}
+
+/* Responsiveness */
+@media (max-width: 900px) {
+    .page {
+        max-width: 100%; /* Use full width for smaller screens */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .toggle-btn {
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .item {
+        padding: 15px;
+    }
+
+    .standardized-image {
+        width: 100px; /* Smaller images for smaller screens */
+        height: 100px;
+    }
+}

@@ -1,0 +1,118 @@
+.dropdown, .search, .location {
+    margin: 10px 0;
+  }
+  
+  .page label {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    color: inherit;
+  }
+  
+  .page select, .page input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    color: #333;
+    outline: none;
+  }
+  
+  .page select:focus, .page input[type="text"]:focus {
+    border-color: #007bff;
+    background-color: #fff;
+  }
+  
+  .page button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 5px 0;
+    width: 100%;
+  }
+  
+  .page button:hover {
+    opacity: 0.9;
+  }
+  
+  /* Dark Mode Styles */
+  body.dark-mode .page label {
+    color: #f4f4f9;
+  }
+  
+  body.dark-mode .page select, body.dark-mode .page input[type="text"] {
+    background-color: #555;
+    color: #f4f4f9;
+    border-color: #666;
+  }
+  
+  body.dark-mode .page select:focus, body.dark-mode .page input[type="text"]:focus {
+    border-color: #007bff;
+    background-color: #444;
+  }
+  
+
+  /* Page3.css */
+
+/* Style for the search container */
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+/* Style for the search label */
+.search label {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+/* Style for the search input */
+.search input {
+  width: 80%; /* Makes the textbox larger */
+  padding: 15px; /* Adds more padding for a bigger appearance */
+  font-size: 1.2em; /* Increases the font size */
+  border: 2px solid #ccc; /* Border for the textbox */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adds a slight shadow for depth */
+  transition: box-shadow 0.3s ease; /* Smooth transition for the shadow effect */
+}
+
+/* Add focus effect to the search input */
+.search input:focus {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Enhances the shadow on focus */
+  outline: none; /* Removes default outline */
+  border-color: #007bff; /* Change border color on focus */
+}
+
+/* Style for the search button */
+.search button {
+  margin-top: 20px;
+  padding: 15px 40px; /* Makes the button larger */
+  font-size: 1.2em; /* Increases the font size */
+  background-color: #007bff; /* Primary color */
+  color: white; /* Text color */
+  border: none; /* Removes the default border */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow for depth */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+/* Add hover effect to the search button */
+.search button:hover {
+  background-color: #0056b3; /* Darkens the button on hover */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Enhances the shadow on hover */
+}
+
+/* Add active effect to the search button */
+.search button:active {
+  background-color: #004080; /* Even darker color when active */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Reduces the shadow on active */
+}

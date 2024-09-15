@@ -1,0 +1,22 @@
+
+.header-buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .dark-mode-btn, .profile-btn {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .dark-mode-btn:hover, .profile-btn:hover {
+    background-color: #0056b3;
+  }
+  

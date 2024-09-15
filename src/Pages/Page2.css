@@ -1,0 +1,64 @@
+.page form {
+    width: 100%;
+  }
+  
+  .page label {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: inherit;
+  }
+  
+  .page input[type="email"],
+  .page input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    color: #333;
+    outline: none;
+    margin-bottom: 10px;
+  }
+  
+  .page input[type="email"]:focus,
+  .page input[type="password"]:focus {
+    border-color: #007bff;
+    background-color: #fff;
+  }
+  
+  .page button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 5px 0;
+    width: 100%;
+  }
+  
+  .page button:hover {
+    opacity: 0.9;
+  }
+  
+  /* Dark Mode Styles */
+  body.dark-mode .page label {
+    color: #f4f4f9;
+  }
+  
+  body.dark-mode .page input[type="email"],
+  body.dark-mode .page input[type="password"] {
+    background-color: #555;
+    color: #f4f4f9;
+    border-color: #666;
+  }
+  
+  body.dark-mode .page input[type="email"]:focus,
+  body.dark-mode .page input[type="password"]:focus {
+    border-color: #007bff;
+    background-color: #444;
+  }
+  
